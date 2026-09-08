@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bakery Hub - Catalogue</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="catalogue.html">Catalogue</a>
+
+        <a href="../WEEK-4/signup.html">Sign Up</a>
+
+        <a href="../WEEK-1/login.html">Login</a>
+
+        <span id="cart">
+            🛒 Cart: <span id="cartCount">0</span>
+        </span>
+
+    </nav>
+
+
+    <!-- Heading -->
+
+    <h1>🍰 Bakery Hub</h1>
+
+    <h2>Our Bakery Catalogue</h2>
+
+    <p class="description">
+        Freshly baked products made with love.
+    </p>
+
+
+    <!-- Category buttons -->
+
+    <div class="categories">
+
+        <button onclick="filterProducts('all')">
+            All
+        </button>
+
+        <button onclick="filterProducts('cake')">
+            Cakes
+        </button>
+
+        <button onclick="filterProducts('pastry')">
+            Pastries
+        </button>
+
+        <button onclick="filterProducts('cookie')">
+            Cookies
+        </button>
+
+        <button onclick="filterProducts('bread')">
+            Breads
+        </button>
+
+    </div>
+
+
+    <!-- Products -->
+
+    <div class="products">
+
+
+        <!-- Chocolate Cake -->
+
+        <div class="product" data-category="cake">
+
+            <div class="emoji">
+                🍫
+            </div>
+
+            <h3>Chocolate Cake</h3>
+
+            <p>Rich and delicious chocolate cake.</p>
+
+            <h4>₹450</h4>
+
+            <button onclick="addToCart(450)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- Black Forest Cake -->
+
+        <div class="product" data-category="cake">
+
+            <div class="emoji">
+                🍒
+            </div>
+
+            <h3>Black Forest Cake</h3>
+
+            <p>Soft cake with cream and cherries.</p>
+
+            <h4>₹500</h4>
+
+            <button onclick="addToCart(500)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- Croissant -->
+
+        <div class="product" data-category="pastry">
+
+            <div class="emoji">
+                🥐
+            </div>
+
+            <h3>Croissant</h3>
+
+            <p>Fresh and crispy buttery croissant.</p>
+
+            <h4>₹120</h4>
+
+            <button onclick="addToCart(120)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- Cupcake -->
+
+        <div class="product" data-category="pastry">
+
+            <div class="emoji">
+                🧁
+            </div>
+
+            <h3>Vanilla Cupcake</h3>
+
+            <p>Soft vanilla cupcake with cream.</p>
+
+            <h4>₹80</h4>
+
+            <button onclick="addToCart(80)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- Cookies -->
+
+        <div class="product" data-category="cookie">
+
+            <div class="emoji">
+                🍪
+            </div>
+
+            <h3>Chocolate Cookies</h3>
+
+            <p>Crunchy cookies with chocolate chips.</p>
+
+            <h4>₹150</h4>
+
+            <button onclick="addToCart(150)">
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <!-- Bread -->
+
+        <div class="product" data-category="bread">
+
+            <div class="emoji">
+                🍞
+            </div>
+
+            <h3>Fresh Bread</h3>
+
+            <p>Soft and freshly baked bread.</p>
+
+            <h4>₹60</h4>
+
+            <button onclick="addToCart(60)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Cart total -->
+
+    <div class="cart-box">
+
+        <h2>
+            Cart Total: ₹<span id="cartTotal">0</span>
+        </h2>
+
+        <button onclick="clearCart()">
+            Clear Cart
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
