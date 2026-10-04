@@ -1,0 +1,17 @@
+<!ELEMENT bakery (product+)>
+
+<!ELEMENT product (name, category, price, quantity, description)>
+
+<!ATTLIST product
+    id ID #REQUIRED
+>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT category (#PCDATA)>
+
+<!ELEMENT price (#PCDATA)>
+
+<!ELEMENT quantity (#PCDATA)>
+
+<!ELEMENT description (#PCDATA)>

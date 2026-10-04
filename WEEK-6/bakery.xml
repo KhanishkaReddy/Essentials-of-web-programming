@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE bakery SYSTEM "bakery.dtd">
+
+<bakery>
+
+    <product id="P001">
+
+        <name>Chocolate Cake</name>
+
+        <category>Cake</category>
+
+        <price>450</price>
+
+        <quantity>1</quantity>
+
+        <description>
+            Rich and delicious chocolate cake with creamy frosting.
+        </description>
+
+    </product>
+
+
+    <product id="P002">
+
+        <name>Black Forest Cake</name>
+
+        <category>Cake</category>
+
+        <price>500</price>
+
+        <quantity>1</quantity>
+
+        <description>
+            Soft chocolate cake with whipped cream and cherries.
+        </description>
+
+    </product>
+
+
+    <product id="P003">
+
+        <name>Vanilla Cupcake</name>
+
+        <category>Pastry</category>
+
+        <price>80</price>
+
+        <quantity>1</quantity>
+
+        <description>
+            Soft vanilla cupcake topped with delicious cream.
+        </description>
+
+    </product>
+
+
+    <product id="P004">
+
+        <name>Chocolate Cookies</name>
+
+        <category>Cookie</category>
+
+        <price>150</price>
+
+        <quantity>10</quantity>
+
+        <description>
+            Crunchy cookies filled with chocolate chips.
+        </description>
+
+    </product>
+
+
+    <product id="P005">
+
+        <name>Fresh Bread</name>
+
+        <category>Bread</category>
+
+        <price>60</price>
+
+        <quantity>1</quantity>
+
+        <description>
+            Freshly baked soft bread prepared every day.
+        </description>
+
+    </product>
+
+
+    <product id="P006">
+
+        <name>Croissant</name>
+
+        <category>Pastry</category>
+
+        <price>120</price>
+
+        <quantity>1</quantity>
+
+        <description>
+            Crispy and buttery French-style croissant.
+        </description>
+
+    </product>
+
+</bakery>
