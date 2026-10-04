@@ -1,0 +1,13 @@
+Welcome to Bakery Hub!
+
+This text was loaded asynchronously using the Fetch API.
+
+Our bakery offers freshly baked cakes, pastries, cookies and breads.
+
+Today's Special Items:
+Chocolate Cake - ₹450
+Black Forest Cake - ₹500
+Vanilla Cupcake - ₹80
+Chocolate Cookies - ₹150
+Fresh Bread - ₹60
+Croissant - ₹120

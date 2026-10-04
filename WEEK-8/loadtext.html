@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bakery Hub - Fetch API</title>
+</head>
+
+<body>
+
+    <h1>🍰 Bakery Hub</h1>
+
+    <h2>Load Bakery Information</h2>
+
+    <button onclick="loadText()">
+        Load Bakery Information
+    </button>
+
+    <div id="output"
+         style="margin-top:15px; white-space:pre-line;">
+    </div>
+
+
+    <script>
+
+        function loadText() {
+
+            fetch('notes.txt')
+
+                .then(response => {
+
+                    if (!response.ok)
+                        throw new Error(
+                            'Network error: ' + response.status
+                        );
+
+                    return response.text();
+
+                })
+
+                .then(data => {
+
+                    document.getElementById('output').innerText = data;
+
+                })
+
+                .catch(error => {
+
+                    document.getElementById('output').innerText =
+                        'Error: ' + error.message;
+
+                });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
