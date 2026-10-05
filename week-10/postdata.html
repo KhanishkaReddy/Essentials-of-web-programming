@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bakery Hub - Fetch POST</title>
+</head>
+
+<body>
+
+    <h2>🍰 Bakery Hub Order Form</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <br><br>
+
+    <label>Product:</label>
+    <input type="text" id="product">
+    <br><br>
+
+    <button onclick="submitData()">Submit Order</button>
+
+    <pre id="output"></pre>
+
+
+    <script>
+
+        function submitData() {
+
+            const payload = {
+                name: document.getElementById('name').value,
+                product: document.getElementById('product').value
+            };
+
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+
+            .then(res => res.json())
+
+            .then(data => {
+
+                document.getElementById('output').innerText =
+                    'Server Response:\n' +
+                    JSON.stringify(data, null, 2);
+
+            })
+
+            .catch(err => {
+
+                document.getElementById('output').innerText =
+                    'Error: ' + err.message;
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
