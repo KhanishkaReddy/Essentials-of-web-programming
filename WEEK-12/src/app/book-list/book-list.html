@@ -1,0 +1,14 @@
+<h2>🍰 Bakery Products</h2>
+
+<div *ngIf="products.length > 0; else noProducts">
+  <div *ngFor="let product of products">
+    <p>
+      <strong>{{ product }}</strong>
+      <button (click)="removeProduct(product)">Remove</button>
+    </p>
+  </div>
+</div>
+
+<ng-template #noProducts>
+  <p>No products available.</p>
+</ng-template>
