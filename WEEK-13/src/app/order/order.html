@@ -1,0 +1,18 @@
+<h2>📝 Bakery Order Form</h2>
+
+<label>Name:</label>
+<input [(ngModel)]="name" placeholder="Enter your name">
+
+<br><br>
+
+<label>Product:</label>
+<input [(ngModel)]="product" placeholder="Enter product">
+
+<br><br>
+
+<button (click)="placeOrder()">Place Order</button>
+
+<p *ngIf="name && product">
+  Customer: {{ name }}<br>
+  Product: {{ product }}
+</p>
